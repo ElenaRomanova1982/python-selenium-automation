@@ -10,7 +10,7 @@ HELP_CONTENT = (By.XPATH, "//div[@class='help-content']")
 
 @when('Click Help button')
 def click_help_button(context):
-    context.driver.find_element(*HELP_BUTTON).click
+    context.driver.find_element(*HELP_BUTTON).click()
 
 @when('Input Cancel Order into search field')
 def search_for_solution(context):
