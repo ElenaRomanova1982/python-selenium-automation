@@ -32,7 +32,7 @@ sleep(4)
 
 # verify
 # assert 'Cancel Order' in driver.find_element(By.XPATH, "//div[contains(@class,'commercial-unit-desktop-top')]").text
-assert "Cancel Items or Orders" in driver.find_element(By.XPATH, '//div[@class=\'help-content\']').text
+assert "Cancel Items or Orders" in driver.find_element(By.XPATH, "//div[@class='help-content']").text
 # assert "Cancel+Order&search" in driver.current_url
 
 # wait for 4 sec

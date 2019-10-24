@@ -37,3 +37,29 @@ driver.find_element(By.XPATH, "//a[contains(@href, 'condition_of_use')]")
 $x("//a[contains(@href, 'notification_privacy_notice')]")
 driver.find_element(By.XPATH, "//a[contains(@href, 'notification_privacy_notice')]")
 '''
+
+''' HW#3 
+1) Amazon button
+    $$(".a-icon.a-icon-logo")
+    
+2) Create account
+    $$("h1.a-spacing-small")
+
+3) Your name
+    $$("#ap_customer_name")
+4) Email    
+    $$("#ap_email")
+5) Password
+    $$("#ap_password")
+6) Re-enter password
+    $$("#ap_password_check")
+7) Create your Amazon account
+    $$("input#continue.a-button-input")
+8) Condition of use    
+    $$("a[href*='condition_of_use']")
+9) Privacy Notice
+    $$("a[href*='notification_privacy_notice']")
+10) Sign In
+    $$("a[href*='notification_privacy_notice']")
+    
+'''
