@@ -10,6 +10,7 @@ HAM_MENU = (By.ID, 'nav-hamburger-menu')
 #HAM_MENU = (By.ID, 'nav-hamburger-menu1')
 AMAZON_MUSIC_MENU_ITEM = (By.XPATH, "//ul[contains(@class, 'hmenu-visible')]//div[contains(text(), 'Amazon Music')]")
 AMAZON_MUSIC_MENU_ITEM_RESULT = (By.CSS_SELECTOR, "ul.hmenu-visible a:not(.hmenu-back-button")
+TODAYS_DEALS = (By.CSS_SELECTOR, "#nav-xshop > a[href*=goldbox]")
 
 
 @given('Open Amazon page')
@@ -37,6 +38,10 @@ def click_ham_menu(context):
 @when('Click on Amazon Music menu item')
 def click_amazon_music(context):
     context.driver.find_element(*AMAZON_MUSIC_MENU_ITEM).click()
+
+@when('Click on Todays deals button')
+def click_todays_deals(context):
+    context.driver.find_element(*TODAYS_DEALS).click()
 
 
 @then('Verify cart has {expected_item_count} item')

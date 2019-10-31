@@ -9,9 +9,9 @@ def browser_init(context):
     # context.browser = webdriver.Safari()
     # context.browser = webdriver.Firefox()
 
-    # context.driver.maximize_window()
+    context.driver.maximize_window()
     context.driver.implicitly_wait(4)
-
+    #context.driver.wait = WebDriverWait(context.driver, 10)
 
 def before_scenario(context, scenario):
     print('\nStarted scenario: ', scenario.name)
