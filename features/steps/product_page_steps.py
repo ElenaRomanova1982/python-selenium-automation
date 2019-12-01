@@ -12,6 +12,15 @@ SELECTED_COLOR = (By.CSS_SELECTOR, 'div#variation_color_name span.selection')
 @when ('Click Add to cart button')
 def click_add_cart(context):
     context.driver.find_element(*ADD_TO_CART_BUTTON).click()
+    sleep(4)
+
+@when ('Close suggestion side section')
+def close_side_suggestion(context):
+    closing_btn = context.driver.find_elements(*CLOSING_X_SIDE_SELECTION)
+    if len(closing_btn) == 1:
+        closing_btn[0].click()
+    else:
+        pass
 
 '''@when('Close suggestion side selection')
 def close_side_suggestion(context):
